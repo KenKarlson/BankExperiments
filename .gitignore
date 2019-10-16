@@ -1,6 +1,6 @@
 target
 
-out
+out/
 .idea
 *.iml
 
