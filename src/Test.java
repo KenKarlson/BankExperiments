@@ -10,7 +10,7 @@ public class Test {
         DateFormat myFormat = new SimpleDateFormat("yyyyMMddHHmm"); // Формат даты
 
         // Из строки в тайм
-        String myData = "201909141200"; // Входящие данные
+        String myData = "201909151200"; // Входящие данные
         var incomingTime = myFormat.parse(myData);// Получить дату
         System.out.println(incomingTime);// Распечатать дату
 
