@@ -1,18 +1,19 @@
 //***
-// Version 2.0
+// Version 3.0
 //*
 
 import bankaccounts.BankAccount;
+import bankaccounts.DebitAccount;
+
 public class Main {
     public static void main(String[] args){
 
-        BankAccount bk_1 = new BankAccount(001, 0.00);
-        //Внести деньги на счет
-        bk_1.setTotalMoney(112.2);
-        //Снять деньги со счета
-        bk_1.setTotalMoney(-510.5);
-        System.out.println((bk_1.getTotalMoney() < 0) ? "Вы должны банку: " + bk_1.getTotalMoney() + " руб." :
-                "На счету " + bk_1.getTotalMoney() + " руб.");
+        BankAccount da_1 = new DebitAccount(001, 1000.00);
+
+        da_1.withdraw(1500);
+        var x = da_1.getBalance();
+        da_1.getCreationTime();
+        System.out.println(x +"\n"+da_1.getCreationTime());
 
 
     }
