@@ -14,14 +14,6 @@ public abstract class BankAccount {
         setCreationTime();
     }
 
-    public int getAccountNumber() {
-        return accountNumber;
-    }
-
-    public void setAccountNumber(int accountNumber) {
-        this.accountNumber = accountNumber;
-    }
-
     public double getBalance() {
         return balance;
     }
@@ -51,4 +43,5 @@ public abstract class BankAccount {
         creationTime = new Date();
     }
 
+    protected abstract void setBalance();
 }

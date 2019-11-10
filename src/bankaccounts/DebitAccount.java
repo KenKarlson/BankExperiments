@@ -17,12 +17,12 @@ public class DebitAccount extends BankAccount{
         if(amount < getBalance() && ( (y-x) > 2_000_000)){
             setBalance(getBalance()-amount);
         }else{
-            System.out.println("что то пошло не так");
+            System.out.println("Operation not possible");
         }
     }
 
-    public void deposit (){
-        System.out.println(getBalance());
+    @Override
+    protected void setBalance() {
 
     }
 }
