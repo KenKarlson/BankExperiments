@@ -5,7 +5,7 @@ import java.util.Date;
 public abstract class BankAccount {
 
     private int accountNumber;
-    double balance;
+    private double balance;
     private Date creationTime;
 
     public BankAccount(int accountNumber, double balance) {
@@ -44,7 +44,7 @@ public abstract class BankAccount {
     }
     // Вывод баланса
     public void display() {
-        System.out.println("balance = " + balance);
+        System.out.println("balance = " + this.getBalance());
     }
     // Дата открытия счета
     public void setCreationTime(){
